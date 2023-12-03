@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <title>Shoping-cart page</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="https://www.jobpasscard.com/static/images/new_Jobpasscard/jobpasscard-logo-nav.png" alt="Logo">
+        </a>
+        <nav>
+            <a href="">ABOUT US</a>
+            <a href="#">PASSCARD</a>
+            <a href="#">PROFILE</a>
+        </nav>
+        <div class="account-menu">
+            <a href="#">
+                <img src="./Pics/search-svgrepo-com.png" alt="search-logo">
+            </a>
+            <a href="#">
+                <img class="cart" src="./Pics/shopping-cart-svgrepo-com.png" alt="Mycart">
+            </a>
+            <a href="#">LOGIN</a>
+            <a href="#">SIGN UP</a>
+        </div>
+    </header>
+    <main>
+        <h1 class="topic-mycart">My Cart</h1>
+        <div class="main-order-payment">
+            <div class="item">
+                <div class="card">
+                    <button><img src="./Pics/trash-bin-2-svgrepo-com.png" alt="Tash"></button>
+                    <div class="selected-item">
+                        <img class="item-logo" src="./Pics/docs-svgrepo-com.png" alt="Docs">
+                        <p class="item-name">Google Docs</p>
+                        <p class="item-detail">Used for business</p>
+                    </div>
+                    <div class="selected-item-detail">
+                        <p>Google Docs</p>
+                        <div class="level-dot">
+                            <img src="./Pics/dotfilled-svgrepo-com.png" alt="">
+                            <img src="./Pics/dotemty-svgrepo-com (1).png" alt="">
+                            <img src="./Pics/dotemty-svgrepo-com (1).png" alt="">
+                            <select name="level">
+                                <option value="LV1-3">LV1-3</option>
+                                <option value="LV2-3">LV2-3</option>
+                                <option value="LV3-3">LV3-3</option>
+                            </select>
+                        </div>
+                        <div class="selected-price">
+                            <p class="currency">THB</p>
+                            <p class="total-amout">150</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <button><img src="./Pics/trash-bin-2-svgrepo-com.png" alt="Tash"></button>
+                    <div class="selected-item1">
+                        <img class="item-logo" src="./Pics/docs-svgrepo-com.png" alt="Docs">
+                        <p class="item-name">Google Slides</p>
+                        <p class="item-detail">Used for business</p>
+                    </div>
+                    <div class="selected-item-detail">
+                        <p>Google Docs</p>
+                        <div class="level-dot">
+                            <img src="./Pics/dotfilled-svgrepo-com.png" alt="">
+                            <img src="./Pics/dotfilled-svgrepo-com.png" alt="">
+                            <img src="./Pics/dotemty-svgrepo-com (1).png" alt="">
+                            <img src="./Pics/dotemty-svgrepo-com (1).png" alt="">
+                            <select name="level">
+                                <option value="LV1-3">LV1-4</option>
+                                <option value="LV2-3">LV2-4</option>
+                                <option value="LV3-3">LV3-4</option>
+                                <option value="LV3-3">LV3-4</option>
+                            </select>
+                        </div>
+                        <div class="selected-price">
+                            <p class="currency">THB</p>
+                            <p class="total-amout">150</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-info">
+                <h3>Order Info</h3>
+                <div class="subtotal">
+                    <p>Subtotal</p>
+                    <div class="amount1">
+                        <p class="currency">THB</p>
+                        <p class="total-amout">300</p>
+                    </div>
+                </div>
+                <div class="promocode">
+                    <div class="couponcode">
+                        <img src="./Pics/coupon-ticket-voucher-svgrepo-com.png" alt="Coupon">
+                        <input type="text" placeholder=" Promotion code">
+                    </div>
+                    <button class="coupon-apply" type="submit">APPLY</button>
+                </div>
+                <hr>    
+                <div class="total-payment">
+                    <p>Total payment</p>
+                    <div class="amount2">
+                        <p class="currency2">THB</p>
+                        <p class="total-amout2">300</p>
+                    </div>
+                </div>
+                <button class="checkout-buttom">LOG IN TO CHECKOUT</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

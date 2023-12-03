@@ -1,0 +1,281 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;1000&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    height: 700px;
+    width: 100vw ;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+button {
+    background-color:transparent;
+	display:inline-block;
+	cursor:pointer;
+	padding:0px 0px;
+    border: none;
+}
+
+
+/* Header section */
+header {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 35%, rgba(230,230,230,1) 100%);;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    min-height: 3rem;
+}
+
+/*Header > Logo */
+.logo img {
+    height: 25px;
+    display: block;
+}
+
+/*Header > Navigator */
+nav {
+    display: flex;
+    justify-content: space-between;
+    min-width: 250px;
+    gap: 1rem;
+}
+
+/*Header > Accout Menu */
+.account-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 250px;
+    gap: 1rem;
+}
+.account-menu .cart{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.account-menu a img{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+/* Main Zone */
+main {
+    background: rgb(255,255,255);
+    /* background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 35%, rgba(230,230,230,1) 100%); */
+    padding: 4rem;
+}
+main > h1 {
+    padding: 1rem;
+}
+
+/* Main Oder Payment */
+.main-order-payment {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Item list */
+.item {
+    min-width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card {
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px -5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 200px;
+    min-width: 100%;
+    gap: 2rem;
+    padding-inline-start: 2rem;
+}
+.card button img {
+    border-radius: 100%;
+    border: 1.5px solid #59e68b ;
+    width: 30px;
+    padding: 3px;
+}
+.selected-item {
+    background: rgb(141,246,243);
+    background: radial-gradient(circle, rgba(141,246,243,1) 0%, rgba(70,202,252,1) 72%);
+    box-shadow: 0px 0px 10px 0px;
+    border-radius: 20px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 5px;
+    width: 150px;
+}
+.selected-item1 {
+    background: rgb(228,198,154);
+    background: radial-gradient(circle, rgba(228,198,154,1) 0%, rgba(252,186,70,1) 72%);
+    box-shadow: 0px 0px 10px 0px;
+    border-radius: 20px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 5px;
+    width: 150px;
+}
+.item-logo {
+    box-sizing: content-box;
+    background-color: white;
+    border-radius: 5px;
+    width: 1rem;
+    padding: 0.5rem;
+}
+.item-name {
+    color: white;
+    font-size: 14px;
+} 
+.item-detail {
+    color: white;
+    font-size: 8px;
+}
+.selected-item-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+.level-dot {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 5px;
+}
+.level-dot img {
+    width: 15px;
+    height: 15px;
+}
+.level-dot select {
+    height: 15px;
+    width: 4rem;
+    font-size: 12px;
+}
+.selected-price {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    color: silver;
+}
+
+/* Payment Info Card */
+.order-info {
+    /* background-color: rgb(255, 255, 255); */
+    box-shadow: 0px 0px 10px -5px;
+    min-width: 45%;
+    height: 400px;
+    /* min-width: 460px; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 0.5rem 2rem;
+    flex-wrap: wrap;
+}
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    color: gray;
+}
+.amount1 {
+    display: flex;
+    gap: 0.5rem;
+    color: grey;
+}
+.promocode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.couponcode{
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+    gap: 1rem   ;
+}
+.couponcode input {
+    min-width: 80%;
+}
+.couponcode img {
+    width: 35px;
+}
+.coupon-apply {
+	background-color:transparent;
+	border-radius:14px;
+	border:2px solid #59e68b;
+	display:inline-block;
+	cursor:pointer;
+	color:#59e68b;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 38px;
+	text-decoration:none;
+    min-width: 30%;
+}
+.order-info hr {
+    color: silver;
+    width: 100%;
+}
+.total-payment {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: baseline;
+}
+.amount2 {
+    display: flex;
+    gap: 0.5rem;
+    color: #59e68b;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.checkout-buttom {
+	box-shadow: 1px 1px 2px 1px #028052;
+	background-color:#59e68b;
+	border-radius:28px;
+	border:1px solid #59e68b;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:10px 180px;
+	text-decoration:none;
+}
+.checkout-buttom:hover {
+	background-color:#059e68;
+}
+
+
