@@ -63,10 +63,27 @@ nav {
     width: 20px;
     height: 20px;
 }
+.account-menu a {
+    position: relative;
+}
 .account-menu a img{
     display: block;
     width: 20px;
     height: 20px;
+}
+.account-menu .badge {
+    min-width:1rem;
+    min-height: 1rem;
+    position: absolute;
+    background-color: red;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 11px;
+    top: -7px;
+    left: 10px;
+    z-index: 1;
+    color: white;
+    font-weight: bold;
 }
 
 /* Main Zone */
